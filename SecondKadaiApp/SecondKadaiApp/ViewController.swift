@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
-    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
     @IBAction func handle(_ sender: Any) {
     }
     override func viewDidLoad() {
@@ -28,5 +29,6 @@ class ViewController: UIViewController {
         // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
         resultViewController.x = textField.text!
     }
+    
 }
 
