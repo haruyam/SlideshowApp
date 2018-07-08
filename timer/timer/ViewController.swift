@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
     @IBOutlet weak var timerLabel: UILabel!
     var timer_sec:Float = 0
     override func viewDidLoad() {
@@ -25,6 +27,18 @@ class ViewController: UIViewController {
         self.timer_sec += 0.1
         self.timerLabel.text = String(format: "%.1f", timer_sec)
     }
+    // 再生ボタン IBAction
+    @IBAction func startTimer(_ sender: Any) {
+    }
+    
+    // 一時停止ボタン IBAction
+    @IBAction func pauseTimer(_ sender: Any) {
+    }
+    
+    // リセットボタン IBAction
+    @IBAction func resetTimer(_ sender: Any) {
+    }
+
 }
 
 
