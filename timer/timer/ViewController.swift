@@ -30,16 +30,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startTimer(_ sender: Any) {
-        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
-    }
+        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)    }
+   
+    @IBAction func resetTimer(_ sender: Any) {
+        self.timer_sec = 0
+        self.timerLabel.text = String(format: "%.1f", self.timer_sec)    }
     
     @IBAction func pauseTimer(_ sender: Any) {
         self.timer.invalidate()
-    }
-    
-    @IBAction func resetTimer(_ sender: Any) {
-        self.timer_sec = 0
-        self.timerLabel.text = String(format: "%.1f", self.timer_sec)
+        
     }
     
 }

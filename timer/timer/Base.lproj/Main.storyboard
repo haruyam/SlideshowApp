@@ -30,7 +30,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LiR-dY-ahF"/>
+                                    <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRj-dj-vY9"/>
+                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iuZ-uX-kx3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aC-dS-Nrg">
@@ -38,26 +39,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="一時停止"/>
                                 <connections>
-                                    <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLE-cq-3g3"/>
+                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dl8-Pb-wuG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wib-pg-5uR">
                                 <rect key="frame" x="263" y="242" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="リセット"/>
-                                <connections>
-                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RiM-1Y-Ooh"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="pauseTimer" destination="7aC-dS-Nrg" id="wBq-Ms-bTg"/>
-                        <outlet property="reseTimer" destination="Wib-pg-5uR" id="pGE-1M-hJh"/>
-                        <outlet property="resetTimer" destination="7aC-dS-Nrg" id="Sqh-tX-nQy"/>
-                        <outlet property="startTimer" destination="dof-LY-nAI" id="ebB-fA-8yg"/>
                         <outlet property="timerLabel" destination="gWG-Qd-QBI" id="w56-27-2U4"/>
                     </connections>
                 </viewController>
