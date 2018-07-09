@@ -26,27 +26,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dof-LY-nAI">
-                                <rect key="frame" x="41" y="242" width="31" height="30"/>
+                                <rect key="frame" x="38" y="242" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KfI-H6-tkS"/>
+                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LiR-dY-ahF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aC-dS-Nrg">
-                                <rect key="frame" x="156" y="242" width="62" height="30"/>
+                                <rect key="frame" x="146" y="242" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="一時停止"/>
                                 <connections>
-                                    <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GvK-wV-Qtc"/>
+                                    <action selector="pauseTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLE-cq-3g3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wib-pg-5uR">
-                                <rect key="frame" x="277" y="242" width="62" height="30"/>
+                                <rect key="frame" x="263" y="242" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="リセット"/>
                                 <connections>
-                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56a-Sy-23x"/>
+                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RiM-1Y-Ooh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,8 +54,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="resetTimer" destination="Wib-pg-5uR" id="5RE-m5-QwO"/>
-                        <outlet property="startTimer" destination="dof-LY-nAI" id="0Vp-r7-PPO"/>
+                        <outlet property="pauseTimer" destination="7aC-dS-Nrg" id="wBq-Ms-bTg"/>
+                        <outlet property="reseTimer" destination="Wib-pg-5uR" id="pGE-1M-hJh"/>
+                        <outlet property="resetTimer" destination="7aC-dS-Nrg" id="Sqh-tX-nQy"/>
+                        <outlet property="startTimer" destination="dof-LY-nAI" id="ebB-fA-8yg"/>
                         <outlet property="timerLabel" destination="gWG-Qd-QBI" id="w56-27-2U4"/>
                     </connections>
                 </viewController>
