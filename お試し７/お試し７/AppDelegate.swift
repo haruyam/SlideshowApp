@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  timer
+//  お試し７
 //
-//  Created by 春山優太 on 2018/07/09.
+//  Created by 春山優太 on 2018/07/14.
 //  Copyright © 2018年 haruyam. All rights reserved.
 //
 

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  timer
+//  SlideshowApp
 //
-//  Created by 春山優太 on 2018/07/09.
+//  Created by 春山優太 on 2018/07/12.
 //  Copyright © 2018年 haruyam. All rights reserved.
 //
 
