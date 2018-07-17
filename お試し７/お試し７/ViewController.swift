@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nextbutton: UIButton!
     
+    @IBOutlet weak var tapbutton: UIButton!
     
     @IBOutlet weak var backbutton: UIButton!
     var timer: Timer?
@@ -61,11 +62,13 @@ class ViewController: UIViewController {
             self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
             nextbutton.isEnabled = true
             backbutton.isEnabled = true
+            tapbutton.isEnabled = true
         }
        else { timer = Timer.scheduledTimer(timeInterval:2.0, target: self, selector: #selector (ViewController.onTimer(timer:)), userInfo: nil, repeats: true)
         
         nextbutton.isEnabled = false
          backbutton.isEnabled = false
+            tapbutton.isEnabled = false
             
         }
     }
