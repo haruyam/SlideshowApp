@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgm-sJ-NPX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dgm-sJ-NPX">
                                 <rect key="frame" x="67" y="85" width="240" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrX-TF-DVp">
@@ -52,8 +52,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PD1-Tb-A8S" secondAttribute="bottom" constant="299" id="1MT-P9-P8S"/>
+                            <constraint firstItem="dgm-sJ-NPX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="1Y8-tt-q0k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TkP-Li-bM4" secondAttribute="trailing" constant="68" id="Bgy-Sg-hfe"/>
                             <constraint firstItem="TkP-Li-bM4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="HEU-Ea-qeM"/>
+                            <constraint firstItem="NrX-TF-DVp" firstAttribute="top" secondItem="dgm-sJ-NPX" secondAttribute="bottom" constant="125" id="KkS-ov-QSz"/>
                             <constraint firstItem="PD1-Tb-A8S" firstAttribute="leading" secondItem="aRs-mi-kFP" secondAttribute="trailing" constant="56" id="M6u-Kg-6Mb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aRs-mi-kFP" secondAttribute="bottom" constant="299" id="N4J-AK-vo0"/>
                             <constraint firstItem="PD1-Tb-A8S" firstAttribute="top" secondItem="dgm-sJ-NPX" secondAttribute="bottom" constant="125" id="STO-fA-DaH"/>
@@ -63,10 +65,12 @@
                             <constraint firstItem="aRs-mi-kFP" firstAttribute="top" secondItem="dgm-sJ-NPX" secondAttribute="bottom" constant="125" id="cl6-Bf-svM"/>
                             <constraint firstItem="NrX-TF-DVp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="fHd-J1-00b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NrX-TF-DVp" secondAttribute="bottom" constant="299" id="gHp-K0-rke"/>
-                            <constraint firstItem="TkP-Li-bM4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="lgt-NY-6Ft"/>
                             <constraint firstItem="aRs-mi-kFP" firstAttribute="leading" secondItem="NrX-TF-DVp" secondAttribute="trailing" constant="41" id="qaR-Mj-nbA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dgm-sJ-NPX" secondAttribute="trailing" constant="68" id="unE-J2-bL9"/>
                             <constraint firstItem="NrX-TF-DVp" firstAttribute="top" secondItem="TkP-Li-bM4" secondAttribute="bottom" constant="125" id="vQI-Du-lko"/>
                             <constraint firstItem="NrX-TF-DVp" firstAttribute="top" secondItem="dgm-sJ-NPX" secondAttribute="bottom" constant="125" id="vVH-KI-7hv"/>
+                            <constraint firstItem="TkP-Li-bM4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="wBX-SI-Eh5"/>
+                            <constraint firstItem="dgm-sJ-NPX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="z6G-Li-PWv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
