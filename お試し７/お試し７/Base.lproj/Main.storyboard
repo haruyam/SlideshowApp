@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="お試し_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,11 +46,11 @@
                                     <action selector="startstop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAw-Ad-WPz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBe-aO-1XH">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkP-Li-bM4">
                                 <rect key="frame" x="67" y="85" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="pbv-ey-0XQ" kind="show" id="MfV-QJ-R3Z"/>
+                                    <segue destination="pbv-ey-0XQ" kind="show" id="M91-g4-1bM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,7 +58,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backbutton" destination="PD1-Tb-A8S" id="TIz-sQ-4zV"/>
                         <outlet property="imageView" destination="dgm-sJ-NPX" id="zYk-Td-QML"/>
+                        <outlet property="nextbutton" destination="NrX-TF-DVp" id="xw6-jL-kL9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,25 +70,27 @@
         <!--Result View Controller-->
         <scene sceneID="e1E-Vo-fUb">
             <objects>
-                <viewController id="pbv-ey-0XQ" customClass="ResultViewController" customModule="お試し_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pbv-ey-0XQ" customClass="ResultViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4AH-Oi-ILg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENY-9N-x2F">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENY-9N-x2F">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="581"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-z4-llo">
-                                <rect key="frame" x="133" y="589" width="109" height="78"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ne-H9-udV">
+                                <rect key="frame" x="172" y="617" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="lge-6c-pKL"/>
+                                    <segue destination="8IA-Pj-ebi" kind="unwind" unwindAction="unwind:" id="pah-FZ-Qol"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ENY-9N-x2F" firstAttribute="centerX" secondItem="4AH-Oi-ILg" secondAttribute="centerX" id="CzV-HB-73O"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ISE-uu-16Z"/>
                     </view>
                     <connections>
@@ -94,6 +98,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3n-2K-Q36" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8IA-Pj-ebi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1440.8" y="33.733133433283363"/>
         </scene>
